@@ -101,6 +101,16 @@ public class FileUserDataAccessObject implements SignupUserDataAccessInterface,
     public void setCurrentUser(String name) {
     }
 
+    /**
+     * Returns the signed-in user.
+     *
+     * @return the signed-in user.
+     */
+    @Override
+    public String getCurrentUser() {
+        return "";
+    }
+
     @Override
     public boolean existsByName(String identifier) {
         return accounts.containsKey(identifier);
